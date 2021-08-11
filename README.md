@@ -8,7 +8,7 @@
 ## Note:
 
 - This project is made for ~~Revenge~~ **Educational** purposes only
-- **I am not responsible for the misuse of Master-Bomber.**
+- **I am not responsible for the misuse of SMILE PLEASE.**
 <br>
 
 ## Features:
@@ -22,7 +22,7 @@
 
 ## Usage:
 
-Run these commands to run Master-Bomber
+Run these commands to run SMILE PLEASE
 
 ### > For Windows:
 ```
