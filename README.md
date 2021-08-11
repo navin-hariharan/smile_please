@@ -33,7 +33,7 @@ Run these commands to run SMILE PLEASE
 ### > Other:
 ```
 1. Turn on **LESS SECURE** apps from https://myaccount.google.com/u/2/security?nlr=1
-2. cd Source_Files; mv build.py ..; python build.py
+2. cd Source_Files;mv build.py ..;python build.py
 ```
 
 # CONTACT ME:
