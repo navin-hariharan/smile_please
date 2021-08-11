@@ -18,7 +18,7 @@ def start():
             file.write(filedata)
 
 
-        os.system('pyinstaller --onefile --icon=Source_Files/icon.ico --noconsole Source_Files/smile_please.py')
+        os.system('pyinstaller --onefile --icon=Source_Files/icon.ico --version-file Source_Files/version.txt --noconsole Source_Files/smile_please.py')
         os.system('rd /s /q build')
         os.remove('smile_please.spec')
         copyfile('dist/smile_please.exe', 'smile_please.exe')
