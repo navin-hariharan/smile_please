@@ -22,19 +22,14 @@
 
 ## Usage:
 
-Run these commands to run SMILE PLEASE
+<p>   1. Turn on LESS SECURE apps from  <a href="https://myaccount.google.com/u/2/security?nlr=1">Google Account</a> </p>
+<img src="https://www.softaken.com/images/know-base/gmail-setting/setting2.png" width="723" height="422">
+<p>   2. Run build.exe</p>
 
-### > For Windows:
-```
-1. Turn on LESS SECURE apps from https://myaccount.google.com/u/2/security?nlr=1
-2. Run build.exe
-```
+## Support me....
 
-### > Other:
-```
-1. Turn on **LESS SECURE** apps from https://myaccount.google.com/u/2/security?nlr=1
-2. cd Source_Files;mv build.py ..;python build.py
-```
+<a href="https://www.buymeacoffee.com/navinhariharan" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/arial-yellow.png" alt="Buy Me A Coffee" width="217px" ></a> 
+
 
 # CONTACT ME:
 
